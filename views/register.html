@@ -10,7 +10,7 @@
     </head>
     <body>
         <header>
-            <div class="top-header">
+            <div class="top-header up">
                 <div class="logo"> 
                     <img src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
                 </div>
@@ -21,15 +21,16 @@
                 <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
             </div>
             <nav>
-                <ul>
+                <ul class="menu">
+                    <li><a href="/">Home</a></li>
                     <li><a href="#">Ofertas</a></li>
                     <li><a href="#">Tiendas Oficiales</a></li>
                     <li><a href="#">Vender</a></li>
                     <li><a href="#">Ayuda</a></li>
                 </ul>
-                <ul>
-                    <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
-                    <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                <ul class="menu lista">
+                    <li ><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+                    <li ><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
                     <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
                 </ul>
             </nav>
@@ -39,6 +40,9 @@
         </header>
         <main class="register">
             <form action="/" method="POST">
+                <fieldset>
+                <legend>Registro de Usuario</legend>
+                
                 <input type="text" name="name" placeholder="Nombre y apellido">
                 <input type="text" name="user" placeholder="Nombre de usuario">
                 <input type="email" name="email" placeholder="E-mail">
@@ -57,7 +61,7 @@
                 </div>
 
                 <h4>Intereses</h4>
-                <div class="interests">
+                <div class="interes">
                     <div>
                         <input type="checkbox" name="interests" value="a" id="a">
                         <label for="a">Electro</label>
@@ -92,9 +96,34 @@
                 <input type="reset" value="Borrar">
                 <br>
                 <br>
+                
+            </fieldset>
+
             </form>
         </main>
-        <footer>
+        <footer class="footer">
+            <div class="column">
+                <i class="fas fa-regular fa-credit-card"></i>
+                <h2>Paga con Tarjeta en Efectivo</h2>
+                <p>
+                    con tarjeta o efectivo en puntos de pago.
+¡Y siempre seguro!
+                </p>
+            </div>
+            <div class="column">
+                <i class="fas fa-solid fa-gift"></i>
+                <h2>Envio gratis desde los $2.500</h2>
+                <p>Solo por estar registrad@ en MercadoLiebre tenes envios gratis en miles
+                    de productos. Es un beneicio de MercadoPuntos.</p>
+            </div>
+            <div class="column">
+                <i class=" fas fa-solid fa-user-shield"></i>
+                <h2>Seguridad de principio a fin</h2>
+                <p>
+                    ¿No te gusta? ¡Devolvelo! en MercadoLiebre no hay
+                    nada que no puedas hacer porque estas siempre protegid@
+                </p>
+            </div>
         </footer>
     </body>
 </html>

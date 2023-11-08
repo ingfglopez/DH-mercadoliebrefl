@@ -21,13 +21,21 @@ div.top-header{
     display: flex;
     flex-wrap: wrap;
     padding: 5%;
+
 }
+
+
 
 header div.top-header p{
     width: 100%;
     text-align: center;
     margin-top: 10px;
+    color:#5900ff;
+    font-size: 1em;
+    
 }
+
+
 
 header{
     background-color: #EAC926;
@@ -35,7 +43,7 @@ header{
 
 header div.logo,
 header .form{
-    width: 50%;
+    width: 40%;
 }
 
 header div.logo{
@@ -44,12 +52,21 @@ header div.logo{
 header .form{
     display: flex;
     align-items: center;
-    padding: 2px;
-    font-size: 11px;
+    width: 400px;
+    margin: 20px;
+    justify-content:center;
+    
+    
 }
+
+
 header nav{
+    display: flex;
     font-size: 12px;
-    margin-left: 20px;
+    margin-left: 0px;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    background-color:#00c3ff;
 }
 
 header ul li{
@@ -66,18 +83,24 @@ header .form .input{
     border: 1px solid #000;
     outline: none;
     color: #666;
-    padding: 2px;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 header .form .submit{
-    background-color: #FFF;
-    border: 1px solid #000;
-    color: #666;
-    width: 10%;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: bold;
 }
 
 div.burger-menu{
-    text-align: center;
+    text-align: left;
+    display:none;
 }
 
 div.burger-menu i{
@@ -89,7 +112,35 @@ div.burger-menu i{
     margin: 10px 0px 20px 0px;
     padding: 10px;
     width: 40px;
+    
 }
+
+
+.menu{
+
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    text-align: center; 
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 20px; /* Espacio entre las opciones del menú */
+}
+
+.menu a {
+    color:#e9e5e5; /* Color del texto de las opciones del menú */
+    text-decoration: none; /* Elimina los subrayados de los enlaces */
+}
+
+.lista{
+
+    font-size: 1em;
+}
+
 
 div.last-visit,
 div.offers{
@@ -195,9 +246,110 @@ article div.main-article{
     background-color: #0022AA;
 }
 
+.register {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   
+    margin: 0 auto;
+    max-width: 700px;
+     
+    
+
+}
+
+legend{
+    font-size:1rem ;
+    color: #0022AA;
+    padding: 15px;
+}
 
 
 
+
+.register input, .login{
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin: 20px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+}
+input[type="radio"], input[type="checkbox"] {
+    display: flex;
+    margin: 10px;
+    display: block;
+    align-items: center;
+}
+
+.register input[type="submit"] {
+    background-color:#39b54a ;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.register input[type="reset"] {
+    background-color: red;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.register label,h4 {
+    padding-left: 10px;
+}
+
+.register input[type="submit"]:hover {
+    background-color: #555;
+}
+
+.profile{
+    max-width: 30rem;
+    display: flex;
+    justify-content:left;
+    align-items: left;
+    padding: 20px;
+    margin-left: 10px;
+}
+.interes{
+    max-width: 30rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+    padding: 20px;
+    margin-left: 10px;
+    color: #0022AA;
+
+}
+
+
+
+@media (max-width: 361px) {
+    div.burger-menu{
+     
+        display:block;
+    }
+    .menu {
+        display: none;
+    }
+    .footer {
+        flex-direction: column;
+        flex-wrap: wrap;  
+    
+    }
+}
 
 @media (min-width: 361px){
     main section article .description{
@@ -219,6 +371,10 @@ article div.main-article{
     main section div.products article{
         width: 45%;
     }
+    
+
+
+    
 
     .price,
     .discount{
@@ -230,6 +386,8 @@ article div.main-article{
     main section div.products article{
         width: 22%;
     }
+
+
 }
 
 
@@ -263,6 +421,7 @@ article div.main-article{
     display: flex;
     justify-content: center;
     flex: 1;
+    width: 50px;
     
 
    
@@ -279,3 +438,11 @@ article div.main-article{
     
 }
 
+.column i:hover{
+    background-color: #0022AA;
+}
+
+.login{
+
+
+}
